@@ -201,6 +201,7 @@ angularModule.provider('cloudinary', function () {
 			return Upload.upload({
 				url: config.upload_endpoint + cloud_name + '/upload',
 				fields: options,
+				skipAuthorization: true,
 				file: file
 			});
 		}
